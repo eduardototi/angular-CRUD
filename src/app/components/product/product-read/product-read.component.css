@@ -1,0 +1,39 @@
+.home .title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.home .subtitle {
+    font-size: 1.1rem;
+    align-items: center;
+    font-weight: 500;
+}
+
+.home {
+    display: flex;
+    background-color: rgb(255, 99, 71);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: azure;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px black;
+}
+
+.products-list {
+    margin-top: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+i {
+    text-decoration: none;
+    color: azure;
+    font-size: 2rem;
+    margin-left: 1rem;
+}

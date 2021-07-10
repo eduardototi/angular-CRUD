@@ -1,0 +1,27 @@
+<div class="container">
+    <div *ngFor="let product of products" class="products-list">
+        <mat-card class="home mat-elevation-z3">
+            <mat-card-title class="title"> 
+                <span>{{product.name}}</span>
+            </mat-card-title>
+            <mat-card-subtitle class="subtitle">
+                <span>{{product.price | currency }}</span>
+            </mat-card-subtitle>
+            <mat-card-actions>
+                <a routerLink="/products/update/{{product.id}}">
+                    <i class="material-icons">
+                        edit
+                    </i>
+                </a> 
+                <a routerLink="">
+                    <i class="material-icons">
+                        delete
+                    </i>
+                </a> 
+            </mat-card-actions>	
+            <mat-card-footer>
+                Teste
+            </mat-card-footer>	   	
+        </mat-card>
+    </div>
+</div>  
