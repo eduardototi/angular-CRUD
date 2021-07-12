@@ -33,3 +33,12 @@ i {
     font-size: 2rem;
     margin-left: 1rem;
 }
+
+.img {
+    width: 50%;
+    height: 50%;
+}
+
+.content {
+    font-weight: 300;
+}

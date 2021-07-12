@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ProductService } from './../product.service';
 import { Product } from './../product.model';
 import { Component, OnInit } from '@angular/core';
@@ -11,12 +12,17 @@ export class ProductReadComponent implements OnInit {
 
   products: Product[] | undefined
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService,
+              private router: Router) { }
 
   ngOnInit(): void {
     this.productService.read().subscribe(products => {
       this.products = products
     })
+  }
+
+  navigateToProductCreate(): void {
+    this.router.navigate(['/products/create'])
   }
 
 }

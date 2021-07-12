@@ -1,9 +1,18 @@
+<button mat-raised-button (click)="navigateToProductCreate()" class="create-button">
+    Create Product
+</button>
 <div class="container">
     <div *ngFor="let product of products" class="products-list">
         <mat-card class="home mat-elevation-z3">
             <mat-card-title class="title"> 
                 <span>{{product.name}}</span>
             </mat-card-title>
+            <img mat-card-image src="assets/images/images.png" class="img">
+            <mat-card-content class="content" >
+                Description:
+                <span *ngIf="product.description; else elseBlock">{{product.description}}</span>
+                <ng-template #elseBlock>Not available</ng-template>
+            </mat-card-content>		
             <mat-card-subtitle class="subtitle">
                 <span>{{product.price | currency }}</span>
             </mat-card-subtitle>
@@ -18,10 +27,7 @@
                         delete
                     </i>
                 </a> 
-            </mat-card-actions>	
-            <mat-card-footer>
-                Teste
-            </mat-card-footer>	   	
+            </mat-card-actions>		   	
         </mat-card>
     </div>
 </div>  

@@ -12,7 +12,8 @@ export class ProductCreateComponent implements OnInit {
 
   product: Product = {
     name: '',
-    price: null || 0
+    price: null || 0,
+    description: ""
   }
 
   constructor(private productService: ProductService,
@@ -29,7 +30,7 @@ export class ProductCreateComponent implements OnInit {
   }
 
   cancelProduct(): void {
-    this.router.navigate(['/products'])
+    this.router.navigate([''])
   }
 
 }

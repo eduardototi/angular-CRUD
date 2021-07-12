@@ -10,6 +10,12 @@
             disabled>
         </mat-form-field>
         <mat-form-field>
+            <textarea matInput placeholder="Description: " 
+            [(ngModel)]="product.description"
+            name="description:">
+            </textarea>
+        </mat-form-field>
+        <mat-form-field>
             <input matInput placeholder="Price: U$" 
             [value]="product.price"
             name="price"
