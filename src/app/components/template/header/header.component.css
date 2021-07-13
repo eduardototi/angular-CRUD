@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     background-color: rgb(184, 178, 178);
+    width: 100%;
 }
 
 .header a{
@@ -23,4 +24,13 @@
 
 .header .title-group i {
     padding-right: 5px;
+}
+
+.header .button-create {
+    display: flex; 
+    margin-left: 20px;
+}
+
+.header .create-button {
+    justify-content: flex-end;
 }

@@ -21,8 +21,4 @@ export class ProductReadComponent implements OnInit {
     })
   }
 
-  navigateToProductCreate(): void {
-    this.router.navigate(['/products/create'])
-  }
-
 }
